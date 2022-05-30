@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        />
+    </head>
+    <body>
+        <header class="d-flex py-3 bg-dark text-white justify-content-center">
+            Chemical Experiment
+        </header>
+        <div class="container mt-5">
+            <div class="row">
+                <label class="mr-4">Number of Chemicals</label
+                ><input type="number" min="2" id="chemicalCount" />
+            </div>
+            <div class="row mt-3">
+                <label class="mr-4">Enter Combination</label
+                ><input type="number" min="3"max =20 id="combinationCount" />
+            </div>
+			<div class="row">
+				<div class="col-12" id="dynamicTable">
+
+				</div>
+			</div>
+            <div class="row mt-3">
+                <button class="btn btn-primary mr-3" id="generateTable">Generate Table</button>
+				<button class="btn btn-primary px-3" id="compareCombination">Compare</button>
+            </div>
+        </div>
+    </body>
+</html>
